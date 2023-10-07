@@ -48,8 +48,7 @@ const reducer = createSlice({
                 state.bookInfo = action.payload
             },
             loadMoreBooks(state, action){
-                state.books.items
-                 = [...state.books.items, ...action.payload.data]
+                state.books.items = [...state.books.items, ...action.payload.data]
             },
             setLoading(state, action: PayloadAction<boolean>){
                 state.isLoading = action.payload
